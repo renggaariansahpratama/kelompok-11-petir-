@@ -10,11 +10,27 @@ using namespace std;
 int main (){
     // deklarasi variabel
     float pi = 3.14;
-    int counter = 0;
 
 // deklarasi struktur-zeolit
-float Cx[125], Cy[125], Cz[125]
-float H1x[125], H1y[125], H1z[125]
-float H2x[125], H2y[125], H2z[125]
-float H3x[125], H3y[125], H3z[125]
-float H4x[124], H4y[125], H4z[125]
+float Alx, Aly, Alz;
+float Six, Siy, Siz;
+float O1x[125], O1y[125], O1z[125]
+float O2x[125], O2y[125], O2z[125]
+float O3x[125], O3y[125], O3z[125]
+float O4x[125], O4y[125], O4z[125]
+
+ // masukkan nilai untuk setiap variabel [AlO4].[SiO4]
+ Alx = Aly = Alz = 0.0;
+    
+    Alx = sin(88.75*pi/180) * 177.5;
+    Aly = 0.0;
+    Alz = cos(88.75*pi/180) * 177.5;
+
+    Six = - Cl1x;
+    Siy = Cl1y;
+    Siz = Cl1z;
+
+    // memasukkan nilai tersebut ke dalam file
+    ofstream file;
+    file.open("struktur-zeolite.xyz");
+    file << "3\n" << endl;
