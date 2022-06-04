@@ -26,9 +26,9 @@ float O4x[125], O4y[125], O4z[125]
     Aly = 0.0;
     Alz = cos(88.75*pi/180) * 177.5;
 
-    Six = - Cl1x;
-    Siy = Cl1y;
-    Siz = Cl1z;
+    Six = - Alx;
+    Siy = Aly;
+    Siz = Alz;
 
     // memasukkan nilai tersebut ke dalam file
     ofstream file;
