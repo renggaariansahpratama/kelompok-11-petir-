@@ -53,4 +53,14 @@ float O4x[125], O4y[125], O4z[125]
     <<fixed<<setprecision(3)<<O2x<<setw(3)<<" "\
     <<fixed<<setprecision(3)<<O2y<<setw(3)<<" "\
     <<fixed<<setprecision(3)<<O2z<<setw(3)<<" "\n;
+    
+    file<<setw(3)<<"O3"<<setw(3)<< " "\
+    <<fixed<<setprecision(3)<<O3x<<setw(3)<<" "\
+    <<fixed<<setprecision(3)<<O3y<<setw(3)<<" "\
+    <<fixed<<setprecision(3)<<O3z<<setw(3)<<" "\n;
+   
+    file<<setw(3)<<"O4"<<setw(3)<< " "\
+    <<fixed<<setprecision(3)<<O4x<<setw(3)<<" "\
+    <<fixed<<setprecision(3)<<O4y<<setw(3)<<" "\
+    <<fixed<<setprecision(3)<<O4z<<setw(3)<<" "\n;
     file << "3\n" << endl;
