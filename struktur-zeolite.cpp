@@ -64,3 +64,10 @@ float O4x[125], O4y[125], O4z[125]
     <<fixed<<setprecision(3)<<O4y<<setw(3)<<" "\
     <<fixed<<setprecision(3)<<O4z<<setw(3)<<" "\n;
     file << "3\n" << endl;
+    
+    file.close();
+    
+    cout<<"program selesai";
+    
+    return 0;
+  }
