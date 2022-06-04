@@ -33,4 +33,24 @@ float O4x[125], O4y[125], O4z[125]
     // memasukkan nilai tersebut ke dalam file
     ofstream file;
     file.open("struktur-zeolite.xyz");
+    file<<"3\n"<< endl;
+    file<<setw(3)<<"Al1"<<setw(3)<< " "\
+    <<fixed<<setprecision(3)<<Al1x<<setw(3)<<" "\
+    <<fixed<<setprecision(3)<<Al1y<<setw(3)<<" "\
+    <<fixed<<setprecision(3)<<Al1z<<setw(3)<<" "\n;
+    
+    file<<setw(3)<<"Al2"<<setw(3)<< " "\
+    <<fixed<<setprecision(3)<<Al2x<<setw(3)<<" "\
+    <<fixed<<setprecision(3)<<Al2y<<setw(3)<<" "\
+    <<fixed<<setprecision(3)<<Al2z<<setw(3)<<" "\n;
+    
+    file<<setw(3)<<"Al3"<<setw(3)<< " "\
+    <<fixed<<setprecision(3)<<Al3x<<setw(3)<<" "\
+    <<fixed<<setprecision(3)<<Al3y<<setw(3)<<" "\
+    <<fixed<<setprecision(3)<<Al3z<<setw(3)<<" "\n;
+    
+    file<<setw(3)<<"Al4"<<setw(3)<< " "\
+    <<fixed<<setprecision(3)<<Al4x<<setw(3)<<" "\
+    <<fixed<<setprecision(3)<<Al4y<<setw(3)<<" "\
+    <<fixed<<setprecision(3)<<Al4z<<setw(3)<<" "\n;
     file << "3\n" << endl;
