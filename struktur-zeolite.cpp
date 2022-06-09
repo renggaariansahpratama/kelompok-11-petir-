@@ -137,7 +137,7 @@ int main(){
     float O2x[N], O2y[N], O2z[N];
 
     /* O    O
-        \  /
+       \\  //
          Si
       molekul SiO2 itu bentuk 
     */
@@ -223,7 +223,7 @@ int main(){
 
     return 0;
 }
-                Cl2z[counter] = Mgz[counter] + rB_Cl2z;
+                O2z[counter] = Siz[counter] + rB_O2z;
 
                 counter += 1;
             }
@@ -268,17 +268,17 @@ int main(){
 
     // iterasi dalam output array 
     for(int m = 0; m < Nw; m++){
-        file << setw(3) << "Mg" << setw(3) << " " \
+        file << setw(3) << "Si" << setw(3) << " " \
              << fixed << setprecision(3) << Six[m] << setw(3) << " " \
              << fixed << setprecision(3) << Siy[m] << setw(3) << " " \
              << fixed << setprecision(3) << Siz[m] << "\n";
 
-        file << setw(3) << "Cl" << setw(3) << " " \
+        file << setw(3) << "O1" << setw(3) << " " \
              << fixed << setprecision(3) << O1x[m] << setw(3) << " " \
              << fixed << setprecision(3) << O1y[m] << setw(3) << " " \
              << fixed << setprecision(3) << O1z[m] << "\n";
 
-        file << setw(3) << "Cl" << setw(3) << " " \
+        file << setw(3) << "O2" << setw(3) << " " \
              << fixed << setprecision(3) << O2x[m] << setw(3) << " " \
              << fixed << setprecision(3) << O2y[m] << setw(3) << " " \
              << fixed << setprecision(3) << O2z[m] << "\n";
