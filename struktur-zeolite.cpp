@@ -88,7 +88,7 @@ float densitas;          /* densitas ini memiliki satuan g cm^-3
 float cm3_to_A3 = 1.0E-24;  
 float numb_mol;
 float Na = 6.022E23;            // bilangan avogadro    
-float Mr_SiO2 = 101,96;            // massa relatif dari SiO2 
+float Mr_SiO2 = 101,96;         // massa relatif dari SiO2 
 int numb_lat;                   // panjang sel simulasi    
 int N;                          // jumlah molekul 
 float volum;                    // volume dari molekul SiO2
@@ -137,7 +137,7 @@ int main(){
     float O2x[N], O2y[N], O2z[N];
 
     /* O    O
-         \  /
+        \  /
          Si
       molekul SiO2 itu bentuk 
     */
@@ -146,13 +146,13 @@ int main(){
     float rB_Siy = 0.0;
     float rB_Siz = 0.0;
 
-    float rB_Ox = sin((104.52/2.0)*pi/180.0) * 1.0;
+    float rB_O1x = sin((104.52/2.0)*pi/180.0) * 1.0;
     float rB_O1y = 0.0;
     float rB_O1z = cos((104.52/2.0)*pi/180.0) * 1.0;
 
-    float rB_O2x = - rB_Cl1x;
-    float rB_O2y = rB_Cl1y;
-    float rB_O2z = rB_Cl1z;
+    float rB_O2x = - rB_O1x;
+    float rB_O2y = rB_O1y;
+    float rB_O2z = rB_O1z;
 
     int counter = 0;
     for(int i = 0; i < numb_lat; i++){ //x
@@ -208,12 +208,12 @@ int main(){
              << fixed << setprecision(3) << Siy[m] << setw(3) << " " \
              << fixed << setprecision(3) << Siz[m] << "\n";
 
-        file << setw(3) << "Cl" << setw(3) << " " \
+        file << setw(3) << "Ol" << setw(3) << " " \
              << fixed << setprecision(3) << O1x[m] << setw(3) << " " \
              << fixed << setprecision(3) << O1y[m] << setw(3) << " " \
              << fixed << setprecision(3) << O1z[m] << "\n";
 
-        file << setw(3) << "Cl" << setw(3) << " " \
+        file << setw(3) << "O2" << setw(3) << " " \
              << fixed << setprecision(3) << O2x[m] << setw(3) << " " \
              << fixed << setprecision(3) << O2y[m] << setw(3) << " " \
              << fixed << setprecision(3) << O2z[m] << "\n";
