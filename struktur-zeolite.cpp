@@ -23,6 +23,7 @@ int main (){
     
     // deklarasi variabel
     float pi = 3.14;
+    int counter = 0;
 
 // deklarasi struktur-zeolit
 float Alx, Aly, Alz;
@@ -33,16 +34,31 @@ float O3x[125], O3y[125], O3z[125]
 float O4x[125], O4y[125], O4z[125]
 
  // masukkan nilai untuk setiap variabel [AlO4].[SiO4]
- Alx = Aly = Alz = 0.0;
+   
+   float rB_Alx = 0.0;
+   float rB_Aly = 0.0;
+   float rB_Alz = 0.0;
+   
+   float rB_Six = sin(88.75*pi/180) * 177.5;
+   float rB_Siy = 0.0;
+   float rB_Siz = cos(88.75*pi/180) * 177.5;
+
+    float rB_O1x = - rB_Alx;
+    float rB_O1y = rB_Aly;
+    float rB_O1z = rB_Alz;
     
-    Alx = sin(88.75*pi/180) * 177.5;
-    Aly = 0.0;
-    Alz = cos(88.75*pi/180) * 177.5;
-
-    Six = - Alx;
-    Siy = Aly;
-    Siz = Alz;
-
+    float rB_O2x = - rB_Alx;
+    float rB_O2y = rB_Aly;
+    float rB_O2z = rB_Alz;
+    
+    float rB_O3x = - rB_Alx;
+    float rB_O3y = rB_Aly;
+    float rB_O3z = rB_Alz;
+   
+    float rB_O4x = - rB_Alx;
+    float rB_O4y = rB_Aly;
+    float rB_O4z = rB_Alz;
+    
     // memasukkan nilai tersebut ke dalam file
     ofstream file;
     file.open("struktur-zeolite.xyz");
