@@ -108,7 +108,7 @@ float densitas;          /* densitas ini memiliki satuan g cm^-3
 float cm3_to_A3 = 1.0E-24;  
 float numb_mol;
 float Na = 6.022E23;            // bilangan avogadro    
-float Mr_SiO2 = 101,96;         // massa relatif dari SiO2 
+float Mr_SiO2 = 60.08;          // massa relatif dari SiO2 
 int numb_lat;                   // panjang sel simulasi    
 int N;                          // jumlah molekul 
 float volum;                    // volume dari molekul SiO2
