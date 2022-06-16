@@ -71,6 +71,7 @@ float O4x[125], O4y[125], O4z[125]
     counter += 1;
    }
 }
+
 //hasil iterasi dimasukkan ke dalam file xyz
 ofstream file;
 file.open("struktur zeolit.xyz};
