@@ -83,3 +83,11 @@ for(int m = 0; m < 125; m++){
  file << setw(3) << "Al" << setw(3) <<" "\
       << fixed << setprecision(3) << rB_Alx << set
       << fixed << setprecision(3) << rB_Aly << set
+      << fixed << setprecision(3) << rB_Alz << set
+ }
+ file.close();
+ 
+ cout << "program telah selesai";
+    
+ return 0;
+          
