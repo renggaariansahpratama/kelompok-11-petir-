@@ -8,20 +8,7 @@
 
 using namespace std;
 
-
-void zeolit(){
-    
-}
-void ep(){
-    
-}
-
-int main (){
-    
-    zeolit();
-    ep();
-    
-    // deklarasi variabel
+ // deklarasi variabel
     float pi = 3.14;
     int counter = 0;
 
@@ -39,9 +26,9 @@ float O4x[125], O4y[125], O4z[125]
    float rB_Aly = 0.0;
    float rB_Alz = 0.0;
    
-   float rB_Six = sin(88.75*pi/180) * 177.5;
+   float rB_Six = sin(54.75*pi/180) * 3.062;
    float rB_Siy = 0.0;
-   float rB_Siz = cos(88.75*pi/180) * 177.5;
+   float rB_Siz = cos(54.75*pi/180) * 3.062;
 
     float rB_O1x = - rB_Alx;
     float rB_O1y = rB_Aly;
@@ -87,67 +74,4 @@ float O4x[125], O4y[125], O4z[125]
    }
 }
 
-    
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-   
-    
-    
-    
-    
-    
-    
-    
-    
-   
-    
-    
-
-
-float densitas;          /* densitas ini memiliki satuan g cm^-3
-                            dan ini harus diinput dari user */
-// converter dari nilai cm^-3 ke A^3
-float cm3_to_A3 = 1.0E-24;  
-float numb_mol;
-float Na = 6.022E23;            // bilangan avogadro    
-float Mr_SiO2 = 60.08;          // massa relatif dari SiO2 
-int numb_lat;                   // panjang sel simulasi    
-int N;                          // jumlah molekul 
-float volum;                    // volume dari molekul SiO2
-float lx, ly, lz;               // panjang sel simulasi terhitung
-float lat;                      // jarak antar molekul SiO2
-
-// variabel perhitungan energi potensial 
-float sigma = 2.725;            // satuan (A)
-float epsilon = 3.725;          // satuan (kj/mol)
-float rij, rcut, rcut2;
-float Ep, Ep_LJ, A12, B6;
-float rij6, rij12;
-float dx, dy, dz;       
-
-
+    return
