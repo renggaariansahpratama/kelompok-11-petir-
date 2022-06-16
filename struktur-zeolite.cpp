@@ -71,5 +71,14 @@ float O4x[125], O4y[125], O4z[125]
     counter += 1;
    }
 }
-
-    return
+//hasil iterasi dimasukkan ke dalam file xyz
+ofstream file;
+file.open("struktur zeolit.xyz};
+int N = 125 * 3;
+file << N << "\n"<< endl;
+          
+// iterasi dalam output array
+for(int m = 0; m < 125; m++){
+ file << setw(3) << "Al" << setw(3) <<" "\
+      << fixed << setprecision(3) << rB_Alx << set
+      << fixed << setprecision(3) << rB_Aly << set
